@@ -9,3 +9,9 @@ function solution(s) {
     return arr[Math.floor(len / 2)];
   }
 }
+
+// substring 사용
+function solution(s) {
+  const mid = Math.floor(s.length / 2);
+  return s.length % 2 === 0 ? s.substring(mid - 1, mid + 1) : s[mid];
+}
