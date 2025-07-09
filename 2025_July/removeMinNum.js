@@ -1,3 +1,5 @@
+// 프로그래머스 - 제일 작은 수 제거하기
+
 function solution(arr) {
   const minIndex = arr.indexOf(Math.min(...arr)); // 최소값을 가진 인덱스 찾기
   arr.splice(minIndex, 1); // 최소값을 배열에서 제거
