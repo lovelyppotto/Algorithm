@@ -1,3 +1,5 @@
+// 프로그래머스 - 자릿수 더하기
+
 function solution(n) {
   let str = n.toString();
   let arr = str.split('').map(Number); // 문자열을 숫자 배열로 변환
