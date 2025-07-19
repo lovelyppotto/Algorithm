@@ -10,3 +10,10 @@ function solution(arr1, arr2) {
   }
   return arr;
 }
+
+// 다른 풀이
+
+function solution(arr1, arr2) {
+  // map 함수 활용
+  return arr1.map((row, i) => row.map((v, j) => v + arr2[i][j]));
+} 
