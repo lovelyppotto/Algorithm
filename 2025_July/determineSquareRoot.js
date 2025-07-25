@@ -2,6 +2,7 @@
 
 function solution(n) {
   // n의 제곱근
+  // Math.sqrt() - 숫자의 제곱근 반환하는 함수
   let sqrt = Math.sqrt(n);
   
   // 제곱근이 정수인지 확인
