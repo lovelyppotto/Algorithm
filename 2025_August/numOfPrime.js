@@ -40,3 +40,24 @@ function isPrime(num) {
   }
   return true; // 나누어떨어지는 수가 없으면 소수
 }
+
+// 시간 복잡도 줄이는 풀이(에라토스테네스의 체)
+/**
+ * 
+  * 2부터 각 배수를 소수가 아닌 수로 표시하다 보면 소수만 남게 되는 점을 활용
+ */
+function solution(n) {
+  // 모든 수를 소수라고 가정
+  const isPrime = Array(n + 1).fill(true);
+  isPrime[0] = isPrime[1] = false;
+  
+  for (let i = 2; i * i <= n; i++) {
+    if (isPrime[i]) {
+      for (let j = i * i; j <= n; j += i) {
+        isPrime[j] = false; // i의 배수는 소수가 아님
+      }
+    }
+  }
+  
+  return isPrime.filter(Boolean).length; // true인 값의 개수 반환
+}
