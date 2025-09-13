@@ -11,4 +11,6 @@ function solution(phone_book) {
   return true
 }
 
+// Trie 자료구조를 통해서도 해결 가능(백엔드 실무에서 더 활용 많이함)
+
 solution(["12","123","1235","567","88"])
