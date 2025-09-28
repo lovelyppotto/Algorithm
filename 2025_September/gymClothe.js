@@ -1,3 +1,5 @@
+// 프로그래머스 - 체육복
+
 function solution(n, lost, reserve) {
     // 체육복을 가진 학생들을 표시하는 배열 (1: 체육복 있음, 0: 없음)
     const uniforms = new Array(n + 1).fill(1);
@@ -12,7 +14,7 @@ function solution(n, lost, reserve) {
         uniforms[student]++;
     }
     
-    // 그리디하게 체육복 빌려주기
+    // 체육복 빌려주기
     for (let i = 1; i <= n; i++) {
         // 현재 학생이 체육복이 없다면
         if (uniforms[i] === 0) {
