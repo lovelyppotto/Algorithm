@@ -1,3 +1,5 @@
+// 프로그래머스 - 3진법 뒤집기
+
 function solution(n) {
   // 3진법으로 변환
   const ternary = n.toString(3);
