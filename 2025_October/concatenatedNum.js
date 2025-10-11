@@ -11,6 +11,5 @@ function solution(num_list) {
       odd += n;
     }
   }
-  
   return Number(odd) + Number(even);
 }
